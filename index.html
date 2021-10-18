@@ -1,0 +1,39 @@
+<html>
+
+<head>
+    <link href="style.css" rel="stylesheet" />
+</head>
+
+<body>
+    <audio id="player" autoplay loop>
+    <source src="audio/c.mp3" type="audio/mp3" />
+  </audio>
+    <button id="button"><i class="fas fa-volume-up"></i></button> savvy's home on the internet...ain't my web design skills sick?
+    <br>
+    <br><br> and also you can vist <a href="https://swarajpurohit.me/">this</a>
+    <br><br> i also have a poorly written <a href="">blog</a> <br /><br />
+    <br>
+    <br>
+    <big><big><big><big>
+          <big><big>&lt;big&gt;<a href="https://www.instagram.com/savvy_the_fatnerd/">FOLLOW ME ON
+                INSTAGRAM</a>&lt;/big&gt;</big></big>
+    </big>
+    </big>
+    </big>
+    </big>
+</body>
+<script>
+    const button = document.querySelector("#button");
+    const audio = document.querySelector("audio");
+    button.addEventListener("click", () => {
+        if (audio.paused) {
+            audio.volume = 0.1;
+            audio.play();
+        } else {
+            audio.pause();
+        }
+        button.classList.add("fade");
+    });
+</script>
+
+</html>
